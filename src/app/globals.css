@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column; /* To stack items vertically */
+  align-items: center; /* To center horizontally */
+  justify-content: center; /* To center vertically */
+  height: 100vh; /* Adjust this based on your needs to control the height of the container */
+}
