@@ -1,12 +1,12 @@
 'use client'
 import React from "react";
-
+import { appStore } from "@/store";
 export const A=()=>{
 
     const [name ,setName]=React.useState("")
-
+    
     const fnSubmit=()=>{
-        console.log('submitted....')
+        appStore.dispatch({type:"Name", payload: name} )
     }
     return (
         <>
@@ -16,9 +16,7 @@ export const A=()=>{
             </p>
             <p>
                 <button onClick={fnSubmit}> Submit</button>
-                
             </p>
-            <p>Result :: {name}</p>
         </>
 
     )

@@ -1,10 +1,10 @@
 'use client'
 import React from "react";
-
+import { appStore } from "@/store";
 export const B=()=>{
-    const [loc , setLoc]=React.useState('');
+    const [loc , setLoc]=React.useState("");
     const fnSubmit=()=>{
-        console.log('on submit function called B component.....')
+        appStore.dispatch({type:'Loc', payload: loc})
     }
     return (
         <>
