@@ -1,18 +1,18 @@
 import { init } from "./init"
 
-export const appReducer=(currData=init, newData)=>{
-    switch (newData.type) {
-        case "Name" : currData={
-            ...currData,
-            name:newData.payload.name,
-            email:newData.payload.email,
-            password:newData.payload.password,
-            mobile:newData.payload.mobile
+export const appReducer=(state=init, action)=>{
+    switch (action.type) {
+        case "Name" : state={
+            ...state,
+            name:action.payload.name,
+            email:action.payload.email,
+            password:action.payload.password,
+            mobile:action.payload.mobile
         }
         break;
-        case "Loc" : currData={
-            ...currData,
-            loc:newData.payload
+        case "Loc" : state={
+            ...state,
+            loc:action.payload
         }
         break;
 
@@ -20,5 +20,5 @@ export const appReducer=(currData=init, newData)=>{
         default:
             break;
     }
-    return currData;
+    return state;
 }
