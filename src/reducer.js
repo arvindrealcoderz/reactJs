@@ -10,13 +10,6 @@ export const appReducer=(state=init, action)=>{
             mobile:action.payload.mobile
         }
         break;
-        case "Loc" : state={
-            ...state,
-            loc:action.payload
-        }
-        break;
-
-    
         default:
             break;
     }
