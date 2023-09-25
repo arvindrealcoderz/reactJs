@@ -1,7 +1,8 @@
 import axios from "axios"
-
+import { userInit } from "@/init/init"
+import { appStore } from "@/store/store"
 export class ServiceCall{
     static fnGetUser(url){
-        axios.get(url).then((res)=>console.log(res)).catch((err)=>console.log(err))
+        return axios.get(url);
     }
 }

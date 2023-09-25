@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.6",
     "axios": "^1.5.0",
     "next": "13.5.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-logger": "^1.1.0",
+    "redux-logger": "^3.0.6"
   }
 }
