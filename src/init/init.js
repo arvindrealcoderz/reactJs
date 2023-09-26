@@ -1,4 +1,5 @@
 
 export const userInit={
-    users:[]
+    users:[],
+    posts:[]
 }
