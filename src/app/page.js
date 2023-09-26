@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { UserAction } from './action/UserAction';
 import { postsAction } from './action/postsAction';
+import DisplayUserData  from '@/component/DisplayUserData';
 export default function App() {
 
   const getUserList=()=>{
@@ -19,6 +20,7 @@ export default function App() {
         <button onClick={getPosts}>Get Posts</button>
         <button>Get Photos </button>
     </div>
+    <DisplayUserData/>
 
     </>
   )
